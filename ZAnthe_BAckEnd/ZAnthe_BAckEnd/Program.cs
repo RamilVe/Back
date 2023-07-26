@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
-    opt.UseSqlServer("Server=RAMIL\\SQLEXPRESS;Database=ZantheDb;Trusted_Connection=True");
+    opt.UseSqlServer("Server=RAMIL\\SQLEXPRESS;Database=lastDb;Trusted_Connection=True");
 });
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
